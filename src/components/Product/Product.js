@@ -5,10 +5,15 @@ const Product = (props) => {
     return (
         <div className="product">
           <img src={img} alt="product-img"></img>
+          <div className="product-info">
           <h3>{name}</h3>
-          <p>{seller}</p>
-          <p>{price}$</p>
-          <p>{ratings}</p>
+          <p>Seller:{seller}</p>
+          <h4>{price}$</h4>
+          <p>Ratings: {ratings} Stars</p>
+
+         
+          </div>
+          <button className="btn-cart" >  <p>Add to Cart</p>  </button>
         </div>
     );
 };
